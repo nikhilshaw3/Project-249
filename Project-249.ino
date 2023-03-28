@@ -79,7 +79,7 @@ void loop()
   float tempf = dht.readTemperature(true);
   float tempk = tempc + 273.15;
   float humidity = dht.readHumidity();
-  float dew_point = (tempc - (100 - humidity) / 5);  //  dew point in celcius
+  float dew_point = (tempc - (100 - humidity) / 5);
 
   if (isnan(tempc)  ||  isnan(tempf)  ||  isnan(humidity))
   {
